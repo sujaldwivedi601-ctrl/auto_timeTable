@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart Exam Timetable Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📅 Smart Exam Timetable Generator</h1>
+
+    <div class="form">
+      <select id="category">
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+      </select>
+
+      <input type="number" id="rows" placeholder="Periods per day" min="1" max="8" />
+
+      <input type="text" id="subjects" placeholder="Subjects (comma separated)" />
+
+      <input type="number" id="duration" placeholder="Paper Duration (minutes)" />
+
+      <label>Exam Start Date</label>
+      <input type="date" id="startDate" />
+
+      <label>Exam End Date</label>
+      <input type="date" id="endDate" />
+
+      <button id="generateBtn">Generate Timetable</button>
+    </div>
+
+    <table id="timetable">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Subject</th>
+          <th>Time</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
