@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  height: 100%;
+  margin: 0;
+  padding: 20px;
+}
+
+div {
+  background: #fff;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h3 {
+  margin: 10px 0 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.abmit_card {
+  margin-top: 30px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#hed {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.abmit_card h3 {
+  margin: 4px 0;
+  font-weight: normal;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+thead {
+  background: #2563eb;
+  color: white;
+}
+
+tfoot td {
+  background: #f1f5f9;
+  font-weight: bold;
+}
+
+</style>
+
+
+
+  </head>
+  <body>
+    <div>
+      <h3>Enter the name of Organisation</h3>
+      <input type="text" id="organisation" />
+
+      <h3>Enter the Name of Centre</h3>
+      <input type="text" id="centre" />
+
+      <h3>Enter Roll Number</h3>
+      <input type="text" id="roll_num" />
+
+      <h3>Enter Branch/course</h3>
+      <input type="text" id="branch" />
+
+      <h3> Enter class/semester </h3>
+      <input type="number" id="sem" >
+
+      <h3>Enter subject names (coma separeted)</h3>
+      <input type="text" id="subject" />
+
+      <h3>Exam Time</h3>
+      <input type="time" id="timeinput" />
+
+      <h3>Starting date of Exam</h3>
+      <input type="date" id="date" />
+
+      <button>generate</button>
+    </div>
+
+    <div class="abmit_card">
+<h1 id="hed"></h1>
+<h3 id="jaga"></h3>
+<h3 id="bran"></h3>
+<h3 id="num"></h3>
+<h3 id="class"></h3>
+      <table id="timetable">
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Exam Date</th>
+            <th> Sub.code </th>
+            <th>Paper code</th>
+            <th>Paper Name</th>
+          </tr>
+        </thead>
+
+        <tbody></tbody>
+
+        <!-- <tfoot>
+          <tr>
+            <td colspan="6">Total Study Hours per Day: ~3 Hours</td>
+          </tr>
+        </tfoot> -->
+      </table>
+
+    </dic>
+    <script src="exam.js"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    body{
+        background-color:rgb(246, 224, 180);
+    }
+ .option {
+  max-width: 420px;
+  margin: 50px auto;
+  padding: 25px 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  font-family: Arial, sans-serif;
+}
+
+button{
+    width: 80px;
+    height: 40px;
+    border: none;
+    font-size: 500;
+    color: #ffffff;
+    border-radius: 10px;
+    background-color: dodgerblue;
+}
+
+    .option{
+        display: block;
+    }
+    table {
+      width: 80%;
+      margin: 40px auto;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+    }
+
+    caption {
+      font-size: 22px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    thead {
+      background-color: #435668;
+      color: white;
+    }
+     tbody tr {
+      background-color: #f2f3f6;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #c6cbf4;
+    }
+     /* tbody tr:nth-child() {
+      background-color: #c6cbf4;
+    } */
+
+    tfoot {
+      background-color: #ecf0f1;
+      font-weight: bold;
+    }
+
+    th, td {
+      border: 1px solid #999;
+      padding: 12px;
+      text-align: center;
+    }
+
+    colgroup col:first-child {
+      background-color: #dff9fb;
+    }
+  </style>
+
+    </head>
+    <body>
+
+        <div class="option">
+
+         <h3>How many hourse can you study</h3> 
+        <input type="number" id="study_hourse">
+        
+        <h3 > How many day a week  can you study </h3>
+        <input type="number" id="days">
+
+        <h3> enter names of subjecrt(coma separeted)</h3>
+        <input type="text" id="subject">
+        
+        <button> submit </button>
+        </div>
+        <br>
+        
+         <table id="timetable">
+        <caption>📅 Weekly Study Timetable</caption>
+      <thead></thead>
+
+      <tbody></tbody>
+
+      <tfoot>
+    <tr>
+      <td colspan="6">Total Study Hours per Day: ~3 Hours</td>
+    </tr>
+  </tfoot>
+    </table>
+
+        <script src="meraSir.js"></script>
+    </body>
+</html>
