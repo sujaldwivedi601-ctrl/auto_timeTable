@@ -1,48 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Smart Exam Timetable Generator</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="container">
-    <h1>📅 Smart Exam Timetable Generator</h1>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Timetable Generater</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <div class="form">
-      <select id="category">
-        <option value="student">Student</option>
-        <option value="teacher">Teacher</option>
-      </select>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+        font-family: "Segoe UI", sans-serif;
+        color: white;
+      }
+      h1 {
+        margin: 20px;
+        font-family: sans-serif;
+        color: #f0c882;
+      }
+      div {
+        width: 800px;
+        height: 400px;
+        border-radius: 10px;
+        background-color: rgba(126, 123, 119, 0.674);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 16%;
+        margin-left: 25%;
+      }
 
-      <input type="number" id="rows" placeholder="Periods per day" min="1" max="8" />
+      a button {
+       width: 200px;
+       height: 50px;
+       border-radius: 5px;
+       border: none;
+       font-size: 20px;
+       background-color: #929baf;
+       box-shadow:5px 5px 15px #000000;
+      }
 
-      <input type="text" id="subjects" placeholder="Subjects (comma separated)" />
+#b1{
+    position: relative;
+    left: -40px;
+}
+#b2{
+    position: relative;
+    right: -40px;
 
-      <input type="number" id="duration" placeholder="Paper Duration (minutes)" />
+}
 
-      <label>Exam Start Date</label>
-      <input type="date" id="startDate" />
+      button:hover {
+  transform: translateY(-2px);
+}
 
-      <label>Exam End Date</label>
-      <input type="date" id="endDate" />
 
-      <button id="generateBtn">Generate Timetable</button>
+    </style>
+  </head>
+  <body>
+    <h1>Timetable Generator</h1>
+    <div>
+      <a href="study_timeTable.html">
+        <button id="b1">Personal Timetable</button>
+      </a>
+
+      <a href="exam_timeTable.html">
+        <button id="b2">Exam Timetable</button>
+      </a>
     </div>
-
-    <table id="timetable">
-      <thead>
-        <tr>
-          <th>Date</th>
-          <th>Subject</th>
-          <th>Time</th>
-          <th>Duration</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+  </body>
 </html>
+
+
